@@ -15,7 +15,7 @@ app.use(cors());
 app.get('/', function (req, res) {
     res.send('hello world')
 });
-
+// update according path and version
 app.use('/base/2.4.0/45-fb6443', express.static('/opt/aruba/central/apps/frontend/build'));
 app.use('/guest/2.4.0/45-fb6443', express.static('/opt/aruba/central/apps/guest_ui/build'));
 app.use('/monitoring/2.4.0/45-fb6443', express.static('/opt/aruba/central/apps/monitoring_ui/build'));
