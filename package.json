@@ -1,0 +1,14 @@
+{
+  "name": "hpe-certs",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "sudo node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2"
+  }
+}
