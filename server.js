@@ -22,7 +22,8 @@ app.use('/guest/2.4.0/78-eb4ac3', express.static('/opt/aruba/central/apps/guest_
 app.use('/monitoring/2.4.0/78-eb4ac3', express.static('/opt/aruba/central/apps/monitoring_ui/build'));
 app.use('/msp/2.4.0/78-eb4ac3', express.static('/opt/aruba/central/apps/msp_ui/build'));
 app.use('/maintenance/2.4.0/78-eb4ac3', express.static('/opt/aruba/central/apps/maintenance_ui/build'));
-app.use('/reporting/2.4.0/78-eb4ac3', express.static('/opt/aruba/central/apps/reporting_ui/build'));
+app.use('/reports/2.4.0/78-eb4ac3', express.static('/opt/aruba/central/apps/reporting_ui/build'));
+app.use('/configuration/2.4.0/78-eb4ac3', express.static('/opt/aruba/central/apps/frontend_config/build'));
 
 const httpsServer = https.createServer(sslOptions, app);
 httpsServer.listen(443, () => console.log('Server started on port 443!'));
